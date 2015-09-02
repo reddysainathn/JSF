@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pageflow:Pageflow xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pageflow="http://www.sybase.com/suade/pageflow" id="pf14403772454115" configfile="/JSFProject/WebContent/WEB-INF/faces-config.xml">
+  <nodes xsi:type="pageflow:PFPage" name="login.xhtml" x="203" y="228" id="pf14403772834486" referenceLink="//@navigationRule.0/@fromViewId|" outlinks="pf14403772834487" path="/login.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="welcome.xhtml" x="444" y="228" id="pf14403772834488" referenceLink="//@navigationRule.0/@navigationCase.0/@toViewId|" inlinks="pf14403772834487" path="/welcome.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="city.xhtml" x="229" y="108" id="pf14403822739979" outlinks="pf144038227399710" inlinks="pf144038227399710" path="/city.xhtml"/>
+  <links id="pf14403772834487" target="pf14403772834488" source="pf14403772834486" outcome="success"/>
+  <links id="pf144038227399710" target="pf14403822739979" source="pf14403822739979">
+    <bendPoints d1Height="-36" d2Height="-36"/>
+    <bendPoints d1Width="-64" d1Height="-36" d2Width="-64" d2Height="-36"/>
+    <bendPoints d1Width="-64" d2Width="-64"/>
+  </links>
+</pageflow:Pageflow>

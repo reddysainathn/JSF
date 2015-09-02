@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://java.sun.com/jsp/jstl/core"
+	xmlns:h="http://java.sun.com/jsf/html">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<title>Insert title here</title>
+</head>
+<body>
+
+<h2 align="center">City Records</h2>
+	<h:form>
+		<h:panelGrid columns="3">
+			<h:outputLabel id="cid"  value="ID"></h:outputLabel>
+			<h:inputText value="#{city.id}"></h:inputText>
+			<h:message for="pid"></h:message>
+			
+			<h:outputLabel id="cname" value="Name"></h:outputLabel>
+			<h:inputText value="#{city.name}"></h:inputText>
+			<h:message for="cname"></h:message>
+			
+			<h:outputLabel id="countrycode" value="CountryCode" ></h:outputLabel>
+			<h:inputText value="#{city.countrycode}"></h:inputText>
+			<h:message for="countrycode"></h:message>
+			
+			<h:outputLabel id="district" value="District"></h:outputLabel>
+			<h:inputText value="#{city.district}"></h:inputText>
+			<h:message for="district"></h:message>
+			
+			<h:outputLabel id="population" value="Population" ></h:outputLabel>
+			<h:inputText value="#{city.population}"></h:inputText>
+			<h:message for="population"></h:message>
+
+
+
+		</h:panelGrid>
+		
+		<h:commandButton action="#{city.addCity}"  value="ADD CITY"></h:commandButton>
+	</h:form>
+
+</body>
+</html>

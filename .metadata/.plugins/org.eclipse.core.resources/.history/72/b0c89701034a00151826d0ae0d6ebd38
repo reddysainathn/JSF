@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE validators PUBLIC
+        "-//Apache Struts//XWork Validator 1.0.2//EN"
+        "http://struts.apache.org/dtds/xwork-validator-1.0.2.dtd">
+<validators>
+	<field name="username">
+		<field-validator type="requiredstring">
+		    <message key="uname.error"> </message>
+		</field-validator>
+	</field>
+	<field name="username">
+	    <field-validator type="email">
+	        <message key="email.required.invalid"></message>
+	    </field-validator>
+	</field>
+	<field name="password">
+	    <field-validator type="requiredstring">
+	        <message key="password.error" ></message>
+	    </field-validator>
+	</field>
+	<field name="password">
+	    <field-validator type="requiredstring">
+	        <param name="min">4</param>
+	        <param name="max">12</param>
+	        <message>Password Min Length is 4 and Max Length is 12</message>
+	    </field-validator>
+	</field>
+</validators>
